@@ -1,0 +1,36 @@
+<div id="content" class="bg-v-2">
+    <div id="toolbar" class="primary-color animated fadeindown">
+        <span class="title">Browser Sync</span>
+    </div>
+
+    <div class="animated fadeinup">
+        <!-- Album Cover -->
+        <div class="hero-header animated fadeinup">
+            <img src="asset/img/splash.png" alt="">
+            <!-- Floating Action Button -->
+            <div class="floating-button animated bouncein delay-4" data-ng-click="sync()">
+              <span class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1">
+                <i class="ion-loop"></i>
+              </span>
+            </div>
+        </div>
+
+        <!-- Player Info -->
+        <div class="player-info primary-color animated fadein delay-2"> <!-- album information -->
+            <h4>Start Synchronize</h4>
+            <span>Type browser-sync server url</span>
+            <div class="input-field">
+                <i class="ion-paper-airplane prefix"></i>
+                <input class="validate" id="url" type="text" data-ng-model="data.url" placeholder="192.168.X.X">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer page-bottom primary-color animated fadeinup delay-1">
+    <div class="footer-copyright primary-color">
+        <div class="container">
+            2016 Labs &#64; Akhdani Reka Solusi
+        </div>
+    </div>
+</footer>

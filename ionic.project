@@ -1,0 +1,9 @@
+{
+  "name": "browsersync",
+  "app_id": "",
+  "documentRoot": "app",
+  "watchPatterns": [
+    "app/**/*",
+    "www/**/*"
+  ]
+}

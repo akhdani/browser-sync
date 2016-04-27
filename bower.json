@@ -1,0 +1,28 @@
+{
+  "name": "browser-sync",
+  "private": "true",
+  "devDependencies": {},
+  "install": {
+    "path": "app/asset/lib",
+    "sources": {
+      "alt-angularjs": "lib/alt-angularjs/dist/alt.bundle.js",
+      "jquery": "lib/jquery/dist/jquery.min.js",
+      "Materialize": [
+        "lib/Materialize/dist/css/materialize.min.css",
+        "lib/Materialize/dist/js/materialize.min.js"
+      ],
+      "ngCordova": "lib/ngCordova/dist/ng-cordova.min.js",
+      "ng-cordova-oauth": "lib/ng-cordova-oauth/dist/ng-cordova-oauth.min.js",
+      "requirejs": "lib/requirejs/require.js",
+      "requirejs-plugins": "lib/requirejs-plugins/src/**"
+    }
+  },
+  "dependencies": {
+    "alt-angularjs": "^5.0.9",
+    "requirejs": "^2.2.0",
+    "requirejs-plugins": "^1.0.3",
+    "ngCordova": "^0.1.26-alpha",
+    "Materialize": "materialize#^0.97.6",
+    "Ionicons": "ionicons#^2.0.1"
+  }
+}
