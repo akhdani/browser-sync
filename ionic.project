@@ -1,7 +1,7 @@
 {
   "name": "browsersync",
   "app_id": "",
-  "documentRoot": "app",
+  "documentRoot": "www",
   "watchPatterns": [
     "app/**/*",
     "www/**/*"

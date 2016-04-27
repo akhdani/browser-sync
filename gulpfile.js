@@ -5,13 +5,13 @@ var gulp = require('gulp'),
 
 // Register tasks
 gulp.task('asset', function() {
-  return gulp.src(['app/**/*', '!app/**/*.html', '!app/**/*.css', '!app/component/**/*.js', '!app/route/**/*.js'])
+  return gulp.src(['app/**/*', '!app/**/*.html', '!app/component/**/*.js', '!app/route/**/*.js'])
       .pipe(gulp.dest('www'));
 });
 
 gulp.task('css-min', function() {
   return gulp.src(['app/**/*.css'])
-      .pipe(css({compatibility: 'ie8'}))
+      .pipe(css())
       .pipe(gulp.dest('www'));
 });
 
@@ -45,6 +45,6 @@ gulp.task('js-component', function() {
       .pipe(gulp.dest('www/component'));
 });
 
-gulp.task('default', ['asset', 'css-min', 'html-min', 'js-config', 'js-component', 'js-route']);
-gulp.task('update', ['css-min', 'html-min', 'js-config', 'js-component', 'js-route']);
+gulp.task('default', ['asset', 'html-min', 'js-config', 'js-component', 'js-route']);
+gulp.task('update', ['html-min', 'js-config', 'js-component', 'js-route']);
 gulp.task('build', ['default']);
