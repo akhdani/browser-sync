@@ -1,7 +1,8 @@
 define([
 
-], function(){
-    return [ '$scope', '$store', '$log', '$window', function($scope, $store, $log, $window){
+], function(){    
+    return [ '$scope', '$store', '$log', '$cordovaInAppBrowser', function($scope, $store, $log, $cordovaInAppBrowser){
+        $scope.issync = false;
         $scope.data = {
             url: $store.get('url') || ''
         };
@@ -12,7 +13,13 @@ define([
             var url = 'http://' + $scope.data.url;
             url = url.replace('http://http://', 'http://');
 
-            $window.location.href = url;
+            $scope.issync = true;
+            document.getElementById('iframe').src = url;
+            /*$cordovaInAppBrowser.open(url, '_self', {
+                location: 'yes',
+                clearcache: 'yes',
+                toolbar: 'no'
+            });*/
         };
     }];
 });

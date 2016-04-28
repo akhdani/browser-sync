@@ -16,7 +16,7 @@
     <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="0" />
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
@@ -83,7 +83,6 @@
     <plugin name="de.appplant.cordova.plugin.local-notification" spec="https://github.com/katzer/cordova-plugin-local-notifications.git" />
     <plugin name="cordova-plugin-media" spec="~2.3.0" />
     <plugin name="cordova-plugin-network-information" spec="~1.2.1" />
-    <plugin name="cordova-plugin-inappbrowser" spec="https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git" />
     <plugin name="cordova-plugin-app-preferences" spec="~0.7.7" />
     <plugin name="cordova-plugin-pin-dialog" spec="https://github.com/Paldom/PinDialog.git" />
     <plugin name="com.phonegap.plugins.PushPlugin" spec="https://github.com/phonegap-build/PushPlugin.git" />
@@ -92,4 +91,5 @@
     <plugin name="cordova-sqlite-storage" spec="https://github.com/litehelpers/Cordova-sqlite-storage.git" />
     <plugin name="cordova-plugin-vibration" spec="~2.1.1" />
     <plugin name="cordova-plugin-zip" spec="https://github.com/MobileChromeApps/zip.git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git" />
 </widget>
